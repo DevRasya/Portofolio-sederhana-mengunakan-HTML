@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #0f172a
+        }
+
+        header {
+            padding: 18px 8%;
+            background: #0f172a;
+            color: white
+        }
+
+        .hero {
+            padding: 80px 8%;
+            background: #eff6ff
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin: 0 0 10px
+        }
+
+        .btn {
+            padding: 12px 18px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 8px
+        }
+
+        section {
+            padding: 60px 8%
+        }
+
+        .skills {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            min-width: 150px
+        }
+
+        footer {
+            padding: 24px 8%;
+            background: #0f172a;
+            color: white;
+            text-align: center
+        }
+
+        @media(max-width:600px) {
+            .hero h1 {
+                font-size: 34px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>PORTFOLIO MAHASISWA</header>
+    <section class="hero">
+        <p>Halo, saya</p>
+        <h1 id="nama">Dhevana Rasya Khan</h1>
+        <p>Mahasiswa Politeknik Elektronika Negeri Surabaya</p>
+        <button class="btn" onclick="sapa()">Klik Saya</button>
+    </section>
+    <section>
+        <h2>Tentang Saya</h2>
+        <p>“Saya adalah Mahasiswa Politeknik Elektronika Negeri Surabaya dengan program studi D3 Teknik Informatika yang memiliki ketertarikan pada bidang Cyber Security yaitu kemanan sistem pada web ataupun aplikasi serta ingin lebih mendalami tetang keamanan jaringan dan ingin menyambung kan keamanan dengan Artificial Intelegence."
+.</p>
+    </section>
+    <section>
+        <h2>Keahlian</h2>
+        <div class="skills">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+        </div>
+    </section>
+    <footer>© 2026 DHEVANA</footer>
+    <script>
+        function sapa() {
+            alert('Halo! Terima kasih sudah mengunjungi website saya.');
+        }
+    </script>
+
+</body>
+
+</html>
